@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/helloworld", func(w http.ResponseWriter, r *http.Request) {
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		w.Write([]byte("Hello World"))
 	})
 
